@@ -27,7 +27,7 @@ function showHearts() {
 function showNoMessage() {
     var message = document.getElementById("message");
     message.innerText = "Itu membuatku sakit hati Its okay🙃💔";
-    message.style.color = "#333";
+    message.style.color = "rgb(63, 9, 59)";
 }
 
 function createHeart() {
