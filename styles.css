@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('sunset1.jpg') no-repeat center center fixed;
+    background-size:contain;
+    background-color: rgba(204, 20, 152, 0.782);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+body::before, body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    left: 0;
+    background-image: url('https://png.pngtree.com/png-clipart/20221218/original/pngtree-cute-bear-png-image_8773708.png'); /* Ganti dengan path ke gambar latar kiri */
+}
+
+body::after {
+    right: 0;
+    background-image: url('https://png.pngtree.com/png-clipart/20221218/original/pngtree-cute-bear-png-image_8773708.png'); /* Ganti dengan path ke gambar latar kanan */
+}
+
+body::before {
+    content: "Ola";
+    font-size: 5.5em;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    animation: slideInLeft 5s ease-in-out infinite;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+body::after {
+    content: "Ola";
+    font-size: 5.5em;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    animation: slideInRight 5s ease-in-out infinite;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.container {
+    text-align: center;
+    background: rgb(186, 155, 111);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s forwards;
+}
+
+.container {
+    text-align: center;
+    background: rgba(211, 203, 203, 0.238);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s forwards;
+    width: 80%;
+    max-width: 500px;
+    z-index: 1;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Great Vibes', cursive;
+    color: #ff61d5b9;
+}
+
+.reveal-btn, .heart-btn, .no-btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+}
+
+.reveal-btn:hover, .heart-btn:hover, .no-btn:hover {
+    background: #ff61d5;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+#message-container {
+    margin-top: 20px;
+    animation: fadeIn 1s forwards;
+}
+
+#message {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from { border-color: transparent; }
+    to { border-color: black; }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.heart {
+    position: fixed;
+    top: 90%;
+    font-size: 5em;
+    animation: float 4s infinite, fadeOut 4s forwards;
+}
+
+.confetti {
+    position: fixed;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 0, 0);
+    opacity: 0.7;
+    border-radius: 50%;
+    animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100vh); }
+    100% { transform: translateY(100vh); }
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .reveal-btn, .heart-btn, .no-btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    #message {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .reveal-btn, .heart-btn, .no-btn {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    #message {
+        font-size: 1.2em;
+    }
+}
