@@ -3,7 +3,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background: url('sunset1.jpg') no-repeat center center fixed;
-    background-size:contain;
+    background-size: 50%;
     background-color: rgba(204, 20, 152, 0.782);
     display: flex;
     justify-content: center;
