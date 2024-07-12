@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 45vh;
     margin: 0;
     overflow: hidden;
 }
@@ -36,26 +36,28 @@ body::after {
 
 body::before {
     content: "Ola";
-    font-size: 5.5em;
-    color: white;
+    font-size: 2.5em;
+    color: rgb(63, 9, 59);
     font-family: 'Great Vibes', cursive;
     text-align: center;
     animation: slideInLeft 5s ease-in-out infinite;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    background-size: 100%;
 }
 
 body::after {
     content: "Ola";
-    font-size: 5.5em;
-    color: white;
+    font-size: 2.5em;
+    color: rgb(63, 9, 59);
     font-family: 'Great Vibes', cursive;
     text-align: center;
     animation: slideInRight 5s ease-in-out infinite;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+    background-size: 100%;
 }
 
 .container {
@@ -83,7 +85,7 @@ body::after {
     font-size: 2.5em;
     margin-bottom: 20px;
     font-family: 'Great Vibes', cursive;
-    color: #ff61d5b9;
+    color: rgb(63, 9, 59);
 }
 
 .reveal-btn, .heart-btn, .no-btn {
@@ -114,7 +116,7 @@ body::after {
 
 #message {
     font-size: 1.8em;
-    color: #333;
+    color: rgb(63, 9, 59);
     margin-bottom: 20px;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
