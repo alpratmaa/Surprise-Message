@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: url('sunset1.jpg') no-repeat center center fixed;
+    background: url('sya4.jpg') no-repeat center center fixed;
     background-size: 50%;
     background-color: rgba(204, 20, 152, 0.782);
     display: flex;
@@ -26,16 +26,16 @@ body::before, body::after {
 
 body::before {
     left: 0;
-    background-image: url('https://png.pngtree.com/png-clipart/20221218/original/pngtree-cute-bear-png-image_8773708.png'); /* Ganti dengan path ke gambar latar kiri */
+    background-image: url('https://png.pngtree.com/png-clipart/20221022/original/pngtree-cute-cat-png-image_8711406.png'); /* Ganti dengan path ke gambar latar kiri */   
 }
 
 body::after {
     right: 0;
-    background-image: url('https://png.pngtree.com/png-clipart/20221218/original/pngtree-cute-bear-png-image_8773708.png'); /* Ganti dengan path ke gambar latar kanan */
+    background-image: url('https://png.pngtree.com/png-clipart/20221022/original/pngtree-cute-cat-png-image_8711406.png'); /* Ganti dengan path ke gambar latar kanan */ 
 }
 
 body::before {
-    content: "Ola";
+    content: "Febby";
     font-size: 2.5em;
     color: rgb(63, 9, 59);
     font-family: 'Great Vibes', cursive;
@@ -44,11 +44,11 @@ body::before {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    background-size: 100%;
+    background-size:100%;
 }
 
 body::after {
-    content: "Ola";
+    content: "Febby";
     font-size: 2.5em;
     color: rgb(63, 9, 59);
     font-family: 'Great Vibes', cursive;
@@ -116,7 +116,7 @@ body::after {
 
 #message {
     font-size: 1.8em;
-    color: rgb(63, 9, 59);
+    color:  rgb(63, 9, 59);
     margin-bottom: 20px;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
