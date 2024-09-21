@@ -6,18 +6,18 @@ function revealMessage() {
     clickSound.play();
 
     // Change background
-    document.body.style.backgroundImage = "url('sunset2.jpg')";
+    document.body.style.backgroundImage = "url('sya1.jpg')";
 }
 
 function showHearts() {
     var heartSound = document.getElementById("heart-sound");
     heartSound.play();
-    
+
     // Stop click sound
     var clickSound = document.getElementById("click-sound");
     clickSound.pause();
     clickSound.currentTime = 0; // Reset the sound to the beginning if played again
-    
+
     for (let i = 0; i < 20; i++) {
         createHeart();
     }
@@ -32,8 +32,8 @@ function showHearts() {
 function showNoMessage() {
     var message = document.getElementById("message");
     message.innerText = "Itu membuatku sakit hati Its okay🙃💔";
-    message.style.color = "rgb(63, 9, 59)";
-
+    message.style.color = " rgb(63, 9, 59)";
+    
     // Stop click sound
     var clickSound = document.getElementById("click-sound");
     clickSound.pause();
